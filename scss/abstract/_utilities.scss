@@ -1,0 +1,65 @@
+@use "./variables"as v;
+
+.container {
+   width: 90%;
+   height: auto;
+   margin: 0 auto;
+   max-width: v.$width-container;
+}
+
+.container-fluid {
+   width: 90%;
+   margin-inline: auto;
+}
+
+section {
+   padding: v.$section-padding 0;
+}
+
+.pr-05 {
+   padding-right: 0.5rem;
+}
+
+.pr-2 {
+   padding-right: 2rem;
+}
+
+.pl-05 {
+   padding-left: 0.5rem;
+}
+
+.pl-2 {
+   padding-left: 2rem;
+}
+
+.w-100 {
+   width: 100%;
+}
+
+.text-center {
+   text-align: center;
+}
+
+.d-flex {
+   display: flex;
+}
+
+.d-flex-col {
+   display: flex;
+   flex-direction: column;
+}
+
+.btn-global {
+   border: none;
+   color: white;
+   cursor: pointer;
+   font-size: 1.2rem;
+   display: inline-block;
+   padding: 1.4rem 3.2rem 1.3rem;
+   background-color: v.$color-primary;
+   transition: background 0.2s ease-in-out;
+
+   &:hover {
+      background-color: darken(v.$color-primary, 10%);
+   }
+}

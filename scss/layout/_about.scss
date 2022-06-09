@@ -1,0 +1,35 @@
+@use '../abstract/helper'as *;
+
+#aboutUs {
+
+	.about-wrapper {
+		flex-basis: 40%;
+		@extend .flexRow-between;
+
+		figure {
+			flex-basis: 65%;
+			padding-right: 3rem;
+		}
+	}
+}
+
+.about-content {
+	display: flex;
+	flex-basis: 35%;
+	flex-direction: column;
+
+	h4 {
+		font-size: 1.8rem;
+		font-weight: 100;
+		letter-spacing: 3px;
+		padding: 1.5rem 0;
+	}
+
+	p {
+		margin-bottom: 2rem;
+	}
+
+	.btn-global {
+		width: fit-content;
+	}
+}

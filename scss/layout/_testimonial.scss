@@ -1,0 +1,52 @@
+@use '../abstract/helper'as *;
+
+#testimonials {
+	position: relative;
+
+	.swiper-wrapper {
+		@extend .flexRow-between;
+	}
+
+	img {
+		height: 300px;
+	}
+
+	.testimonial-content {
+		padding: 3rem;
+
+		svg {
+			font-size: 10rem;
+			margin-bottom: 3.5rem;
+			color: $color-primary;
+		}
+
+		p {
+			line-height: 1.7;
+			font-size: 1.5rem;
+			font-style: italic;
+			margin-bottom: 2rem;
+		}
+
+		span {
+			color: grey;
+			font-size: 1.4rem;
+			letter-spacing: 2px;
+		}
+	}
+}
+
+#partners {
+	padding: 0;
+	margin-top: 3rem;
+	background-color: $color-light-100;
+}
+
+#contact-cta {
+	padding: 4rem 0;
+	text-align: center;
+
+	p {
+		width: 60%;
+		margin: 2rem auto;
+	}
+}

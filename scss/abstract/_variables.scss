@@ -1,0 +1,67 @@
+// Font Variables -------- fm - Font Family -- fs - Font Size -- fw - Font Weight -------
+
+$fm-body : "Segoe UI",
+sans-serif;
+
+$fm-primary : 'Josefin Sans',
+sans-serif;
+
+$fm-secondary : 'Anton',
+sans-serif;
+
+$fs-h1 : 6rem;
+$fs-h2 : 4.2rem;
+$fs-h3 : 2.4rem;
+$fs-h4 : 1.8rem;
+$fs-h5 : 1.5rem;
+$fs-h6 : 1.2rem;
+
+$fs-btn : 1.4rem;
+$fs-body : 1.4rem;
+$fs-icons : 1.2rem;
+$fs-topbar : 1.2rem;
+$fs-subheading : 1.5rem;
+
+// -- Line Height - lh -------------------------------------------------------------------
+
+$lh-body : 1.7;
+$lh-heading : 1.2;
+
+// Color Variables -----------------------------------------------------------------------
+
+$color-gradient1: linear-gradient(to top, #2A41FF, transparent);
+$color-gradient2: linear-gradient(to top, transparent, #2A41FF);
+
+$color-scrollbar : #eee;
+$color-scrollThumb : #FF5126;
+
+$color-primary : #FF5126;
+$color-secondary : #e1a1ff;
+
+$color-light-100 : #F5F6F8;
+$color-light-400 : #e0e0e0;
+$color-light-800 : #e0e0e0;
+
+$color-Dark-100 :#202020;
+$color-Dark-400 : #121212;
+$color-Dark-800 : #000000;
+
+$color-footerBar : #2c2d31;
+
+$color-text-primary : #202020;
+$color-text-secondary : #a8a8a8;
+
+$color-body : #2c2c2c;
+
+// Dimensions Variables ------------------------------------------------------------------
+
+$width-container : 1140px;
+$section-padding : 6rem;
+
+// Box Shadow ----------------------------------------------------------------------------
+
+$box-shadow-lg: 0 1rem 3rem rgba(black, .175);
+$box-shadow-md: 0 .5rem 1rem rgba(black, .15);
+$box-shadow-sm: 0 .125rem .25rem rgba(black, .075);
+
+// ----------------------------------------------------------------------------

@@ -1,0 +1,58 @@
+@use '../abstract/helper'as *;
+
+#staff-dir {
+	background-image: url(../../images/staff-bg.jpg);
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	z-index: 1;
+	padding: 8rem 0;
+
+	h2,
+	h4,
+	p {
+		color: white;
+	}
+
+	&:before {
+		content: "";
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: -1;
+		background-color: rgba(0, 0, 0, 0.603);
+	}
+}
+
+
+.staff-head {
+	width: 60%;
+	margin: 0 auto;
+	text-align: center;
+
+	h4 {
+		font-weight: 100;
+		padding: 1.6rem 0;
+		letter-spacing: 4px;
+	}
+}
+
+.staff {
+	display: flex;
+	margin-top: 8rem;
+	justify-content: space-evenly;
+
+	.staff-item {
+		color: white;
+		text-align: center;
+
+		h4 {
+			color: white;
+			font-size: 1.6rem;
+			letter-spacing: 1.2px;
+			padding: 2rem 0 0.6rem;
+		}
+	}
+}

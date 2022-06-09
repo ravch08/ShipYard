@@ -1,0 +1,54 @@
+@use '../abstract/helper'as *;
+
+#whyChoose {
+	padding: 4rem 0;
+
+	.heading {
+		text-align: center;
+
+		h4 {
+			font-weight: 100;
+			line-height: 1.5;
+			font-size: 1.8rem;
+			padding: 1.5rem 0;
+			letter-spacing: 3px;
+		}
+	}
+}
+
+.whyChoose-wrapper {
+	display: flex;
+	margin-top: 3.5rem;
+
+	.row {
+		display: flex;
+		flex-direction: column;
+		flex-basis: 50%;
+	}
+}
+
+.values {
+	padding: 2rem 3rem;
+	@extend .flexRow-start;
+
+	svg {
+		height: auto;
+		width: 12rem;
+		margin-top: 1rem;
+		fill: $color-primary;
+		padding-right: 1.5rem;
+	}
+
+	h3 {
+		font-size: 3rem;
+		margin-bottom: 1.6rem;
+	}
+
+	p {
+		line-height: 1.7;
+	}
+
+	.value {
+		transform: translateY(0.8rem);
+	}
+}

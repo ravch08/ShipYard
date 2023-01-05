@@ -49,6 +49,19 @@ section {
    flex-direction: column;
 }
 
+
+.fade-in {
+   opacity: 0;
+   transform: translateY(5rem);
+   transition: transform 0.6s ease-in, opacity 0.7s ease-in,
+      background-color 0.4s ease-in-out;
+
+   &.appear {
+      opacity: 1;
+      transform: translateY(0rem);
+   }
+}
+
 .btn-global {
    border: none;
    color: white;

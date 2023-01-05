@@ -56,3 +56,18 @@
 		}
 	}
 }
+
+
+// ----- Media Queries -------------------------------------------------------------------
+
+@media screen and (max-width: 768px) {
+
+	.staff-head {
+		width: 90%;
+	}
+
+	.staff {
+		gap: 2rem;
+		flex-wrap: wrap;
+	}
+}

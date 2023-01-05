@@ -33,3 +33,23 @@
 		width: fit-content;
 	}
 }
+
+
+
+// ----- Media Queries -------------------------------------------------------------------
+
+@media screen and (max-width: 1024px) {
+
+	#aboutUs {
+		.about-wrapper {
+			gap: 4rem;
+			flex-direction: column;
+
+
+			figure {
+				flex-basis: 100%;
+				padding-right: 0;
+			}
+		}
+	}
+}

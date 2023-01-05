@@ -52,3 +52,13 @@
 		transform: translateY(0.8rem);
 	}
 }
+
+
+// ----- Media Queries -------------------------------------------------------------------
+
+@media screen and (max-width: 1024px) {
+
+	.whyChoose-wrapper {
+		flex-direction: column;
+	}
+}

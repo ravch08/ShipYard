@@ -9,6 +9,11 @@ header {
 	padding: 1.8rem 0;
 	@extend .flexRow-between;
 	background-color: $color-light-100;
+	transition: padding 0.3s ease-in-out;
+
+	span {
+		font-weight: 100;
+	}
 
 	.nav-list,
 	.header-wrapper {
@@ -23,24 +28,13 @@ header {
 		color: $color-footerBar;
 	}
 
-	span {
-		font-weight: 100;
+	&.sticky {
+		padding: 2.5rem 0;
+		box-shadow: $box-shadow-md;
+		background-color: $color-light-100;
 	}
 }
 
-.show {
-	left: 0 !important;
-}
-
-.hide {
-	left: -25% !important;
-}
-
-.sticky {
-	padding: 2.5rem 0;
-	box-shadow: $box-shadow-md;
-	background-color: $color-light-100;
-}
 
 .nav-list {
 	.nav-item {
@@ -108,10 +102,18 @@ header {
 	height: 100vh;
 	position: absolute;
 	top: 0;
-	left: -25%;
+	right: -25%;
 	z-index: 999;
 	transition: left 0.3s ease-in-out;
 	background-color: $color-secondary;
+
+	.nav-brand {
+		color: white;
+	}
+
+	.close {
+		@extend .flexRow-center;
+	}
 
 	nav {
 		margin: 18rem 0 0 4rem;
@@ -207,6 +209,7 @@ header {
 // ----- Media Queries -------------------------------------------------------------------
 
 @media screen and (max-width: 1024px) {
+
 	header {
 		.primary-navigation {
 			display: none;
@@ -219,14 +222,30 @@ header {
 
 	.sidebar {
 		width: 100%;
-		left: -100%;
+		right: -100%;
+		transition: right 0.3s ease-in-out;
+
 
 		.sidebar-wrapper {
 			padding: 2rem 3rem;
 		}
-	}
 
-	.hide {
-		left: -100% !important;
+		&.open {
+			right: 0;
+		}
+	}
+}
+
+@media screen and (max-width: 628px) {
+
+	#banner {
+
+		h1 {
+			font-size: 4.2rem;
+		}
+
+		.banner-content {
+			width: 100%;
+		}
 	}
 }

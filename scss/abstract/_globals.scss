@@ -114,6 +114,20 @@ small {
 	font-size: 80%;
 }
 
+
+// ----- Media Queries -------------------------------------------------------------------
+
+@media screen and (max-width: 628px) {
+	h2 {
+		font-size: 3.6rem;
+	}
+
+	h3 {
+		font-size: 2.8rem;
+	}
+}
+
+
 /* OPTIONAL -- remove animations for people who've turned them off */
 
 @media (prefers-reduced-motion: reduce) {

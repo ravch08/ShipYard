@@ -8,7 +8,7 @@
 	}
 
 	.testimonial-content {
-		padding: 3rem;
+		padding: 2rem;
 
 		svg {
 			font-size: 10rem;
@@ -44,5 +44,16 @@
 	p {
 		width: 60%;
 		margin: 2rem auto;
+	}
+}
+
+
+
+// ----- Media Queries -------------------------------------------------------------------
+
+@media screen and (max-width: 768px) {
+
+	#contact-cta p {
+		width: 95%;
 	}
 }
